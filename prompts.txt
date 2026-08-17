@@ -1,0 +1,2 @@
+Branch 2:
+Can you create a TaskRuns entity with 6 or 7 commonly used fields (for example, name, startedAt, finishedAt, status, message, triggerSource etc. ) - also use the @sap/cds/common aspects
