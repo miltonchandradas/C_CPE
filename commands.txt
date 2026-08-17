@@ -3,3 +3,8 @@ INITIALIZE PROJECT
 cds init C_CPE
 cds deploy --to sqlite:db/c_cpe.db
 cds watch --profile hybrid
+
+RUNNING IN HYBRID MODE
+============================================================================
+cds bind -2 mydestination
+cds watch --profile hybrid

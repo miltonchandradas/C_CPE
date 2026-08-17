@@ -1,0 +1,22 @@
+### Service Document
+GET http://localhost:4004/odata/v4/rfp
+Accept: application/json
+
+### Metadata Document
+GET http://localhost:4004/odata/v4/rfp/$metadata
+Accept: application/xml
+
+### Generate Proposal
+POST http://localhost:4004/odata/v4/rfp/generateProposal
+Accept: application/json
+Content-Type: application/json
+
+{}
+
+### TaskRuns - Service Document
+GET http://localhost:4004/odata/v4/task
+Accept: application/json
+
+### TaskRuns - All Entries
+GET http://localhost:4004/odata/v4/task/TaskRuns
+Accept: application/json

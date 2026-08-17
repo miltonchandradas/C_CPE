@@ -10,3 +10,9 @@ Can you also create a sample rfp in srv/rfp/rfp.txt about a travel management CA
 
 ============================================================================
 
+BRANCH 4:
+Using @sap-ai-sdk/orchestration npm module create an OrchestrationClient using gpt-5.4 model. I have a destination named AICore. Create a function that takes the prompt in srv/prompts/response_rfp_prompt.md and also the rfp in srv/rfp/rfp.txt (replace the placeholder) and send it as a request to the LLM. Also, I want to convert the LLM response into a word document - Use 72 brand font
+
+I forgot to mention in the previous prompt - but can you also add an entry in the TaskRuns entity when the function is invoked.  Initially with the status Pending and once the word document is completed and stored in output/ folder the status should change to Completed.  Name of the run should be <random name>_<MM-DD-YYYY>:<HH:MM> (random name with date and time - upto minute is fine)
+
+Can you add a requests.http file to invoke the generateProposal action (maybe also the service document and metadata document)

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A simple CAP project.",
   "dependencies": {
+    "@sap-ai-sdk/orchestration": "^2.14.0",
     "@sap/cds": "^9",
+    "docx": "^9.7.1",
     "express": "^4"
   },
   "devDependencies": {
@@ -12,5 +14,16 @@
   "scripts": {
     "start": "cds-serve"
   },
-  "private": true
+  "private": true,
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "impl": "@cap-js/sqlite",
+        "credentials": {
+          "url": "db/c_cpe.db"
+        }
+      }
+    }
+  }
 }
