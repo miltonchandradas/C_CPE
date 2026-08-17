@@ -5,3 +5,8 @@ Can you create a TaskRuns entity with 6 or 7 commonly used fields (for example, 
 
 BRANCH 3:
 I want to create the user prompt in srv/prompts/response_rfp_prompt.md file.  You are an expert SAP solution architect, SAP BTP technical lead, SAP CAP application architect, and enterprise proposal writer.  Your task is to generate a professional proposal response to the RFP.  The output should be in strict JSON.  Also add placeholder at the bottom to paste the RFP
+
+Can you also create a sample rfp in srv/rfp/rfp.txt about a travel management CAP application - It should be detailed enough
+
+============================================================================
+
