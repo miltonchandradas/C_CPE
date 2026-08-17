@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "A simple CAP project.",
   "dependencies": {
+    "@cap-js/hana": "^2",
     "@sap-ai-sdk/orchestration": "^2.14.0",
     "@sap/cds": "^9",
     "docx": "^9.7.1",
-    "express": "^4"
+    "express": "^4",
+    "@sap/xssec": "^4"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^2"
+    "@cap-js/sqlite": "^2",
+    "@sap/cds-dk": "^9"
   },
   "scripts": {
     "start": "cds-serve"
@@ -23,6 +26,9 @@
         "credentials": {
           "url": "db/c_cpe.db"
         }
+      },
+      "[production]": {
+        "auth": "xsuaa"
       }
     }
   }

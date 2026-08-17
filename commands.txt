@@ -8,3 +8,9 @@ RUNNING IN HYBRID MODE
 ============================================================================
 cds bind -2 mydestination
 cds watch --profile hybrid
+
+DEPLOY TO SAP BTP
+============================================================================
+cds add hana
+cds add xsuaa
+cds add mta
