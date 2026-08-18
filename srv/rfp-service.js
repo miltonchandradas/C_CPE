@@ -44,10 +44,10 @@ module.exports = class RfpService extends cds.ApplicationService {
             const outDir = path.join(__dirname, '..', 'output');
             if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
-            const now = new Date();
-            const mmdd = String(now.getMonth() + 1).padStart(2, '0') + String(now.getDate()).padStart(2, '0');
-            const yyyy = now.getFullYear();
-            const hhmm = String(now.getHours()).padStart(2, '0') + String(now.getMinutes()).padStart(2, '0');
+            const ts = new Date();
+            const mmdd = String(ts.getMonth() + 1).padStart(2, '0') + String(ts.getDate()).padStart(2, '0');
+            const yyyy = ts.getFullYear();
+            const hhmm = String(ts.getHours()).padStart(2, '0') + String(ts.getMinutes()).padStart(2, '0');
             const docPath = path.join(outDir, `proposal_${mmdd}${yyyy}${hhmm}.docx`);
             fs.writeFileSync(docPath, docBuffer);
 
