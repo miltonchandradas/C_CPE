@@ -14,3 +14,6 @@ DEPLOY TO SAP BTP
 cds add hana
 cds add xsuaa
 cds add mta
+
+mbt build
+cf deploy mta_archive/C_CPE_0.0.1.mtar
