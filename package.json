@@ -12,5 +12,19 @@
   "scripts": {
     "start": "cds-serve"
   },
-  "private": true
+  "private": true,
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "impl": "@cap-js/sqlite",
+        "credentials": {
+          "url": "db/c_cpe.db"
+        }
+      },
+      "[production]": {
+        "auth": "xsuaa"
+      }
+    }
+  }
 }
